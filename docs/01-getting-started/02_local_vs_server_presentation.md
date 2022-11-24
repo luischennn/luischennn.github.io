@@ -5,6 +5,8 @@ There are two separate deployments (hereafter referred to as _versions_) of the 
 1. the local version on the Mobile Solution Workshop Windows PC on campus
 2. the server version on https://moloewe.leuphana.de/login
 
+blahblah
+
 This is the same software in different locations. For each version a separate user account is needed. The local and server version differ in terms of accessibility and network settings.
 
 The local version is only accessible from the local PC. A workshop presentation with the local version is advisable if users do not need and do not want to rely on internet access. The local version works in a local WI-FI network. All devices in the local WI-FI network (tablets, PC …) can access the presentation.
