@@ -10,7 +10,7 @@ const config = {
   tagline: 'Faculty of Sustainability - Leuphana University',
   url: 'https://moloewe.leuphana.de',
   baseUrl: '/documentation/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
