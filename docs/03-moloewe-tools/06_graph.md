@@ -1,6 +1,7 @@
 # Graph
 
-A Graph Tool is used to display a Plotly graph during a presentation. Additionally, it supports input from other tools such as Dropdown Tool and Slider Tool.
+A Graph Tool is used to display a Plotly graph during a presentation. Additionally, it supports input from other tools
+such as Dropdown Tool and Slider Tool.
 
 The Graph tool requires definition of a function on the Project Notebook.
 
@@ -8,7 +9,8 @@ The Graph tool requires definition of a function on the Project Notebook.
 
 All the graph tools that needs to be defined for a presentation need to be placed under a single class named `tool_graph`.
 
-Each graph tool is defined using a single `get_` function. It is recommended that the naming of the `get_` and `set_` functions is set in a consistent manner as shown in the example below.
+Each graph tool is defined using a single `get_` function. It is recommended that the naming of the `get_` and `set_`
+functions is set in a consistent manner as shown in the example below.
 
 ```python
 class tool_graph:
@@ -59,9 +61,11 @@ class tool_graph:
         return fig.to_dict()
 ```
 
-The `get_plotly_font_lwd_test_chart` function contains code that is used to create Plotly charts. This example chart (which is a line chart) displays two lines. Additionally, this code also takes input from other interactive tools such as Slider Tool (in case of `line_width_1` and `line_width_2`) and Dropdown Tool (in case of `font_size`). Depending on the values selected using the different interactive tools, the looks of the graph (the data and the graph properties) can be changed.
+The `get_plotly_font_lwd_test_chart` function contains code that is used to create Plotly charts. This example chart
+(which is a line chart) displays two lines. Additionally, this code also takes input from other interactive tools such as Slider Tool (in case of `line_width_1` and `line_width_2`) and Dropdown Tool (in case of `font_size`). Depending on the values selected using the different interactive tools, the looks of the graph (the data and the graph properties) can be changed.
 
-The global variables called within the function allows access to the values stored in the different variables that correspond to the different MoLöwe tools.
+The global variables called within the function allows access to the values stored in the different variables that
+correspond to the different MoLöwe tools.
 
 Please note the following:
 
@@ -72,9 +76,11 @@ Users are referred to the official Plotly documentations for information on how 
 
 ## **Placing Graph on a Slide (Edit Mode)**
 
-To place a Graph Tool on a Slide, first define the Graph Tool on the Project Notebook and upload the notebook to MoLöwe. Then, open the slide in which the Graph Tool needs to be placed in Edit Mode.
+To place a Graph Tool on a Slide, first define the Graph Tool on the Project Notebook and upload the notebook to MoLöwe.
+Then, open the slide in which the Graph Tool needs to be placed in Edit Mode.
 
-Then, open the tool selection panel in Edit Mode on the page that you want to place the tool in by following steps outlined [**here**](docs/02-the-interface/05_slides.md#4-editing-slides-edit-mode).
+Then, open the tool selection panel in Edit Mode on the page that you want to place the tool in by following steps
+outlined [**here**](docs/02-the-interface/05_slides.md#4-editing-slides-edit-mode).
 
 Following that, click on the Graph icon (signified by a bar chart).
 
@@ -92,15 +98,19 @@ Clicking on this icon opens an interface that allows users to select the graph t
 
 ![](/img/doc/41_choose_graph.jpg)
 
-The required fields in this interface are **Tool Name** and **Get Function**. The *Tool Name* is a unique identifier for the tool, whereas the *Get Function* is a function that is defined in the [Project Notebook](docs/04-working-with-notebooks/00_template_notebook.md). The Header and Footer text are optional.
+The required fields in this interface are **Tool Name** and **Get Function**. The *Tool Name* is a unique identifier
+for the tool, whereas the *Get Function* is a function that is defined in the [Project Notebook](docs/04-working-with-notebooks/00_template_notebook.md). The Header and Footer text are optional.
 
-When the Tool Name and Get Functions have been set/selected, users can click on the "Save" button. Then, users are taken back to the slide in Edit Mode.
+When the Tool Name and Get Functions have been set/selected, users can click on the "Save" button. Then, users are taken
+back to the slide in Edit Mode.
 
 They can then resize and reposition the size of the tool on the Slide canvas as described [**here**](00_overview.md).
 
 :::caution
 
-The Graph might not render properly when in Edit Mode. However, when in Presentation Mode or in Controller Mode, provided that there are no errors in the code in the Project Notebook, the Graph will render properly to fill the container that it is placed in.
+The Graph might not render properly when in Edit Mode. However, when in Presentation Mode or in Controller Mode,
+provided that there are no errors in the code in the Project Notebook, the Graph will render properly to fill the
+container that it is placed in.
 
 :::
 
@@ -133,7 +143,9 @@ class tool_graph:
         return fig.to_dict()
 ```
 
-The project path defined in the beginning of the Project Notebook (more [**here**](docs/04-working-with-notebooks/00_template_notebook.md#21-mandatory-section)) allows loading the data using the relative path. The relative path is stored in a global variable named `data`. The user does not have to know that is stored in `data`; as long as a user knows the file name of a data file, they can load the data by simply using the relative path to the file that is created by concatenating the string of the file name to the `data` variable.
+The project path defined in the beginning of the Project Notebook (more
+[**here**](docs/04-working-with-notebooks/00_template_notebook.md#21-mandatory-section)) allows loading the data using
+the relative path. The relative path is stored in a global variable named `data`. The user does not have to know that is stored in `data`; as long as a user knows the file name of a data file, they can load the data by simply using the relative path to the file that is created by concatenating the string of the file name to the `data` variable.
 
 ### Loading Data from URL
 
