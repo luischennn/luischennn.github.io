@@ -1,31 +1,17 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
-name: Node.js CI
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+- name: ps-docs
+  uses: microsoft/ps-docs@v0.1.0
+  with:
+    # The path PSDocs will look for files to input files.
+    inputPath: # optional, default is 
+    # A comma separated list of modules to use containing document definitions.
+    modules: # optional, default is 
+    # An path containing definitions to use for generating documentation.
+    source: # optional, default is .ps-docs/
+    # A comma separated list of conventions to use for generating documentation.
+    conventions: # optional, default is 
+    # The path to write documentation to.
+    outputPath: # optional, default is 
+    # The working directory PSDocs is run from.
+    path: # optional, default is 
+    # Determine if a pre-release module version is installed.
+    prerelease: # optional, default is false
