@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: ' MoLöwe - Mobile Lösungswerkstatt',
-  tagline: 'Faculty of Sustainability - Leuphana University',
+  title: 'ElmoScripting Documentation',
+  tagline: '',
   url: 'https://luischennn.github.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',
@@ -16,9 +16,9 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'moloewe', // Usually your GitHub org/user name.
-  projectName: 'documentation', // Usually your repo name.
-  deploymentBranch: 'main'      // Branch for deployment
+  organizationName: 'luischennn', // Usually your GitHub org/user name.
+  projectName: 'luischennn.github.io', // Usually your repo name.
+  deploymentBranch: 'deployment'      // Branch for deployment
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
